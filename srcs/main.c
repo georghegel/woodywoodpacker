@@ -9,8 +9,33 @@ int main(int argc, char** argv) {
 
   char* binary_name = argv[1];    // add additional security checkers?
 
+  FILE *file = fopen(binary_name, "rb");
+
+  // call file header parser
+
+  if (!file) {
+    perror("fopen");
+    return EXIT_FAILURE;
+  }
+
+  Elf86_64_header header;
+
+  if (fread(&header, 1, sizeof(header), file) != sizeof(header)) {
+    perror("fread");
+    fclose(file);
+    return EXIT_FAILURE;
+  }
+
+  fclose(file);
   
-  // open file
+  if (header.e_ident[EI_MAG0] != ELFMAG0 ||
+      header.e_ident[EI_MAG1] != ELFMAG1 ||
+      header.e_ident[EI_MAG2] != ELFMAG2 ||
+      header.e_ident[EI_MAG3] != ELFMAG3) {
+    fprintf(stderr, "Not an ELF file\n");
+    return EXIT_FAILURE;
+  }
+
   // parse ELF header
   // Check whether it's ELF and x86_64
   // go to the next steps if it is

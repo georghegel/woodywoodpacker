@@ -26,7 +26,7 @@
 #define ELFMAG1 'E'
 #define ELFMAG2 'L'
 #define ELFMAG3 'F'
-#define ELFCLASS 2
+#define ELFCLASS64 2
 #define EM_X86_64 62
 
 typedef struct {
