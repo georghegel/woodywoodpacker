@@ -2,7 +2,7 @@
 
 # Woody Woodpacker
 
-Pack any ELF x86_64 binaries with WOODY packer
+Pack any ELF x86_64 binaries with WOODY packer ([Ecole 42](https://42.fr/en/homepage/) UNIX Security project)
 
 [[Blog Post]](https://t.me/bavariansausages)
 
