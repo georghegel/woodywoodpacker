@@ -14,7 +14,7 @@ int parser(FILE *file, Elf86_64_header *header) {
   }
 
   fclose(file);
-  
+
   if (header->e_ident[EI_MAG0] != ELFMAG0 ||
       header->e_ident[EI_MAG1] != ELFMAG1 ||
       header->e_ident[EI_MAG2] != ELFMAG2 ||
