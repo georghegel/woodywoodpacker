@@ -26,7 +26,7 @@ Before installing and using this packer, please, read the [disclaimer](#disclaim
 - [Stub](#stub)
   - [Injection](#injection)
   - [Decryption](#decryption)
-  - [Launch](#launch)
+  - [Execution](#execution)
 <hr>
 
 ### Disclaimer
@@ -37,6 +37,16 @@ Peace!
 
 ### Installation and Usage
 #### Linux or macOS
+
+```shell
+git clone https://github.com/georghegel/woodywoodpacker.git
+cd woodywoodpacker
+make
+```
+
+```shell
+./woody <ELF_FILENAME>
+```
 #### Docker
 
 ### ELF header parser
@@ -54,4 +64,4 @@ Peace!
 ### Stub
 #### Injection
 #### Decryption
-#### Launch
+#### Execution
