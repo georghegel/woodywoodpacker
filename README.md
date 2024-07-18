@@ -50,7 +50,7 @@ make
 #### Docker
 
 ### ELF header parser
-[[Official Description of ELF header]](https://refspecs.linuxfoundation.org/elf/gabi4+/ch4.eheader.html)<br>
+[[Official Description of ELF header]](https://www.sco.com/developers/gabi/latest/ch4.eheader.html)<br>
 
 <details>
 <summary>ELF header structure image</summary>
