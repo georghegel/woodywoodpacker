@@ -1,4 +1,4 @@
-![Woody](./img/woody.png)
+![Woody](./img/Woody.png)
 
 # Woody Woodpacker
 
